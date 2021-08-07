@@ -39,6 +39,9 @@ class _CalculatorState extends State<Calculator> {
                     value,
                     style: TextStyle(
                         fontSize: 92, fontFamily: 'Segoe', color: Colors.white),
+                    maxLines: 1,
+                    textAlign: TextAlign.right,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ),
