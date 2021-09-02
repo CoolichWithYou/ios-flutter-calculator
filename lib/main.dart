@@ -35,13 +35,18 @@ class _CalculatorState extends State<Calculator> {
                 alignment: Alignment.bottomRight,
                 child: Padding(
                   padding: const EdgeInsets.only(right: 16.0),
-                  child: Text(
-                    value,
-                    style: TextStyle(
-                        fontSize: 92, fontFamily: 'Segoe', color: Colors.white),
-                    maxLines: 1,
-                    textAlign: TextAlign.right,
-                    overflow: TextOverflow.ellipsis,
+                  child: FittedBox(
+                    fit: BoxFit.fitWidth,
+                    child: Text(
+                      value,
+                      style: TextStyle(
+                          fontSize: 92,
+                          fontFamily: 'Segoe',
+                          color: Colors.white),
+                      maxLines: 1,
+                      textAlign: TextAlign.right,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                   ),
                 ),
               ),
